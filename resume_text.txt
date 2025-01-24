@@ -1,0 +1,128 @@
+Shek Lun leung, Alan
+Researcher, Engineer, Developer in quantum and technology
+Profile
+A tech enthusiast with teaching experience in Physical science. The 
+goals are to make fault-tolerant quantum computers and relevant tech 
+application from daily life problems to solve global issues.
+Qualification
+IBM Qiskit Advocate | 09/2020 - Present
+Badge Verification
+Being a mentor (2021) and participant (2020) in IBM Qiskit Summer 
+School, mentor in QPong during Qiskit-Hackathon-Taiwan
+Localization Translator in Traditional Chinese
+Qiskit Developer
+Education
+MSc in Eng Physics (Quantum Technology), KTH | 01/09/2021 -
+Present
+Courses: Advanced Quantum Mechanics, Quantum Technology, 
+Quantum Circuit, Superconductivity and Quantum Liquids
+MSc Physics (Honor), CUHK | 31/08/2016 - 01/07 2018
+PGDE ICT (Major), LS (Minor), CUHK | 31/08/2014 - 01/072016
+BScEd (Honors) (Science and Web Technology), EdUHK | 05/092011 
+- 01/082014
+Self-Project and Collobrative Work
+Quantum Optimisation | 03/2021 - 04/2021
+Max Cut Problem with weighted-edge graph | Github | 02/2021
+• To generalize code for the case of weighted graphs
+Quantum Machine Learning | 10/2020
+Optimizing Quantum Circuit Parameters via Gradient Descent | Github
+• Implementing a circuit of CNOTs, RXs and RYs that returns Bell 
+State of |01> and |10> with set of parameters via gradient descent
+Quantum Game
+QPong installed in Raspberry Pi via lexaloffie | GitHub | 11/2020
+Procedural Generation of Terrain using Unity | 10/2020
+Python Project | 02/2021
+Using RNN to predict stock price within 60 days | GitHub
+Details
+Willing to work overseas
+mail.alanleung@gmail.com
+Links
+Personal Website
+Personal Blog
+LinkedIn
+Github Portfolio
+Quantum Computing Project
+My Leadership and 
+Volunteering Experience
+Math Playlist
+S.T.E.M. Playlist
+Physics Playlist
+Computational Physics
+Physics Project Slide
+Drama and Movie Experience
+Music Experience
+Skills
+Quantum Computing: Qiskit, 
+Cirq, Pennylane
+Data Analysis: Numpy, Scipy, 
+Pandas
+Data Visualization: 
+matplotlib, Seabon, Manim
+Programming ide: Atom, 
+Sublime Text, Jupyter 
+Notebook, Spiyder, PyCharm, 
+Octave
+Machine Learning: 
+Scikit-learn, Octave, Python, 
+Tensorflow, PyTorch, Keras
+IoT: Raspberry Pi, Arduino
+Mathematical Tools: 
+Geogebra, Desmo, Latex
+S.T.E.M.: Micro:bit, Snap 
+Circuit, Ozobot, Wonder Dash 
+& Dot
+Competition
+QHACK organised by Xanadu and Amazon | Github | 02/2021
+Tackling tasks up to top 60 in the score board 
+Generate quantum neural network for classification on patients with 
+COVID-19
+Intermediate level of IBM Quantum Challenge Fall 2020
+Tacking Problem using Grover's Algorithm
+Community Choice Award Winner of Qiskit Hackathon Global 2020
+October 2020 — October 2020
+Research
+Project Research on HK Physics Education, CUHK | 01-07/2018
+Statistical and demographic analysis on academic performance of 
+Physics Education and factors to the popularity of YouTube Physics 
+channel with slide and video presentation 
+Project of ScEd on Quantum Computation, EdUHK | 01-06/2014
+Pedagogical analysis on learning material, lesson plan Quantum 
+Education and designing a web page as Web Quest for undergraduates 
+in inquired-based learning
+Courses
+QTM1x: The Quantum Internet and Quantum Computers: How will 
+they change the world? , Delft University of Technology
+Machine Learning, Stanford University
+Employment History
+ Online Tutor at Key Education Leader | 07/2020 - 01/2021
+• Tutoring students International Syllabus in Physics and Math
+• Applying various digital tools like simulation for students' learning
+Teacher at CCC MK Church KaiOi School | 09/2018- 02/2019
+• Teaching Students Math, CL and ICT with various level
+• S.T.E.M. Class  with exhibition to the public
+Associate Teacher at Kau Yan College | 08/2015 - 08/2016
+• Assisted all teachers in e-learning and mobile learning
+• trained staff on a new employee computer access protocol
+References
+ Prof. David B. Haviland from Department of Applied Physics, KTH
+haviland@kth.se  ·  +46 70 816 14 93
+Prof. Sen Yang from  Department of Physics, CUHK
+senyang@phy.cuhk.edu.hk  ·   +852 39431122
+Movie, Audio Software: Final 
+Cut Pro, Logic Pro, Adobe 
+Illustrator CC
+In-class learning Tools: 
+Kahoot!, Quizlet, Google 
+Earth
+English and Chinese Typing 
+Speed
+Languages
+Cantonese
+English | IELTS: 7.0
+Mandarin
+Swedish
+Hobbies
+Music, Drama, and Movie, 
+Online Learning, Natural 
+Science, Philosophy, TED Talk, 
+Reading
