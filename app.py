@@ -28,10 +28,11 @@ SOCIAL_MEDIA = {
 }
 
 PROJECTS = {
-    "🏆 Sales Dashboard - Comparing sales across three stores": "https://youtu.be/Sb0A9i6d320",
-    "🏆 Income and Expense Tracker - Web app with NoSQL database": "https://youtu.be/3egaMfE9388",
-    "🏆 Desktop Application - Excel2CSV converter with user settings & menubar": "https://youtu.be/LzCfNanQ_9c",
-    "🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel": "https://pythonandvba.com/mytoolbelt/",
+    "🏆 Master Thesis - Communication and Error Correction via Polarisation of Single Photons and Time Ordering": "https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1796647&dswid=-1650",
+    "🏆 Master Project - Machine Learning for Quantum Key Distribution Network Optimization": "https://drive.google.com/file/d/1S9d1gFsjn99yFDipn919nWORZP0PFdNF/view?usp=sharing",
+    
+    # "🏆 Desktop Application - Excel2CSV converter with user settings & menubar": "https://youtu.be/LzCfNanQ_9c",
+    # "🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel": "https://pythonandvba.com/mytoolbelt/",
 }
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
@@ -96,6 +97,9 @@ st.write(
 - ✔️ Excellent team-player and displaying strong sense of initiative on tasks
 """
 )
+
+# Education section header
+st.subheader("🚀 Education & Expertise in Artificial Intelligence")
 
 # Education section header
 st.subheader("🚀 Education & Expertise in Quantum Technology")
