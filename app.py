@@ -14,7 +14,7 @@ PAGE_TITLE = "Digital CV | Shek Lun Leung Alan"
 PAGE_ICON = ":wave:"
 NAME = "Shek Leung Lun, Alan"
 DESCRIPTION = """
-Master of Science in Engineering Physics (Quantum Technology) at KTH Royal Institute of Technology
+Master of Science in Engineering Physics (Quantum Technology) at Royal Institute of Technology (KTH)
 
 Facilitating quantum technology research and development
 """
