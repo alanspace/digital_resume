@@ -107,9 +107,6 @@ st.write(
 )
 
 # Education section header
-st.subheader("🚀 Education & Expertise in Artificial Intelligence")
-
-# Education section header
 st.subheader("🚀 Education & Expertise in Quantum Technology")
 
 # Courses Taken in Quantum Technology
@@ -167,15 +164,19 @@ st.markdown("""
 st.markdown("### 🌟 Summer Schools & Hands-on Experience")
 
 st.markdown("""
-- **7th Superconductivity Summer School** 🧲  
-  Topics: Fundamentals of Superconductivity, Applications in Quantum Computing, Materials, Modelling, and Measurements  
-
-- **Minato Summer School** 🌏  
-  Topics: Cutting-edge Microelectronics, Nanochemistry, Advanced Fabrication Techniques for Quantum Devices  
-
-- **VCQ & TURIS Summer School** 🌠  
-  Topics: Quantum Information, General Relativity, Quantum Algorithms, Standard Model, Quantum Gravity  
+ 
+- **VCQ & TURIS Summer School - September, 2024** 🌠  
+  Topics: Quantum Information, General Relativity, Quantum Algorithms, Standard Model, Quantum Gravity 
+- **Minato Summer School - June, 2024** 🌏  
+  Topics: Cutting-edge Microelectronics, Nanochemistry, Advanced Fabrication Techniques for Quantum Devices: https://photos.app.goo.gl/32SjDaQ1TXAqWdUB6  
+- **7th Superconductivity Summer School - June, 2022** 🧲  
+  Topics: Fundamentals of Superconductivity, Applications in Quantum Computing, Materials, Modelling, and Measurements 
+ 
 """)
+
+# Education section header
+st.subheader("🚀 Education & Expertise in Artificial Intelligence")
+
 
 
 # - 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, VBA
