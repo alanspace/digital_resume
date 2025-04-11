@@ -12,7 +12,7 @@ master_project_file = current_dir / "assets" / "Machine_learning_for_optimal_par
 
 # --- GENERAL SETTINGS ---
 PAGE_TITLE = "Digital CV | Shek Lun Leung Alan"
-PAGE_ICON = ":wave:"
+PAGE_ICON = "👋"
 NAME = "Shek Leung Lun, Alan"
 DESCRIPTION = """
 Master of Science in Engineering Physics (Quantum Technology) at Royal Institute of Technology (KTH)
@@ -57,12 +57,12 @@ with col2:
     st.title(NAME)
     st.write(DESCRIPTION)
     st.download_button(
-        label=" 📄 Download Resume",
+        label="📄 Download Resume",
         data=PDFbyte,
         file_name=resume_file.name,
         mime="application/octet-stream",
     )
-    st.write("📫", EMAIL)
+    st.write("📧", EMAIL)
 
 
 # --- SOCIAL LINKS ---
@@ -77,10 +77,10 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 st.write('\n')
 st.subheader("Recent Positions - CTO & Co-Founder at Metvibee")
 st.write("""
-- ✔️ Prototype development of a smartphone AR app for participatory urban planning
-- ✔️ Sharing insights on digital place-making by leveraging data and AI
-- ✔️ Promoting Sustainable Development Goals (SDGs) through technology
-- ✔️ Collaborating with companies and organizations to develop innovative solutions
+- ✨ Prototype development of a smartphone AR app for participatory urban planning
+- ✨ Sharing insights on digital place-making by leveraging data and AI
+- ✨ Promoting Sustainable Development Goals (SDGs) through technology
+- ✨ Collaborating with companies and organizations to develop innovative solutions
 """
 )
 
@@ -95,22 +95,22 @@ st.write('\n')
 st.subheader("Experience & Qualifications")
 st.write(
     """
-- ✔️ IBM Qiskit Certified Developer
-- ✔️ IBM Qiskit Advocate
-- ✔️ IBM Qiskit Localization Contributor - Platinum Level Translator
-- ✔️ National Section of International Physicists' Tournament
-- ✔️ QuantumGrad Content Creator
-- ✔️ Strong hands on experience and knowledge in Python
-- ✔️ Good understanding of Quantum AI and their respective applications
-- ✔️ Excellent team-player and displaying strong sense of initiative on tasks
+- 🏅 IBM Qiskit Certified Developer
+- 🏅 IBM Qiskit Advocate
+- 🏅 IBM Qiskit Localization Contributor - Platinum Level Translator
+- 🏅 National Section of International Physicists' Tournament
+- 💻 QuantumGrad Content Creator
+- 💻 Strong hands on experience and knowledge in Python
+- 🧠 Good understanding of Quantum AI and their respective applications
+- 🤝 Excellent team-player and displaying strong sense of initiative on tasks
 """
 )
 
 # Education section header
-st.subheader("🚀 Education & Expertise in Quantum Technology")
+st.subheader("📚 Education & Expertise in Quantum Technology")
 
 # Courses Taken in Quantum Technology
-st.markdown("### 🌌 Courses Taken in Quantum Technology")
+st.markdown("### 🎓 Courses Taken in Quantum Technology")
 
 st.markdown("""
 **🧑‍🔬 Advanced Quantum Mechanics**  
@@ -165,18 +165,30 @@ st.markdown("### 🌟 Summer Schools & Hands-on Experience")
 
 st.markdown("""
  
-- **VCQ & TURIS Summer School - September, 2024** 🌠  
+- **VCQ & TURIS Summer School - September, 2024** 🎓  
   Topics: Quantum Information, General Relativity, Quantum Algorithms, Standard Model, Quantum Gravity 
-- **Minato Summer School - June, 2024** 🌏  
+- **Minato Summer School - June, 2024** 🎓  
   Topics: Cutting-edge Microelectronics, Nanochemistry, Advanced Fabrication Techniques for Quantum Devices: https://photos.app.goo.gl/32SjDaQ1TXAqWdUB6  
-- **7th Superconductivity Summer School - June, 2022** 🧲  
+- **7th Superconductivity Summer School - June, 2022** 🎓  
   Topics: Fundamentals of Superconductivity, Applications in Quantum Computing, Materials, Modelling, and Measurements 
  
 """)
 
 # Education section header
-st.subheader("🚀 Education & Expertise in Artificial Intelligence")
-
+st.subheader("🤖 Education & Expertise in Artificial Intelligence")
+st.markdown("### 📚 Courses Taken in AI & Society")
+st.markdown("""
+**📚 Artificial Intelligence in Society**
+            - The first Computational Theory of Mind and Brain
+            - The Mind as Symbol System
+            - The Turing Test
+            - John Searle and The Chinese Room
+            - The Churchland's Connectionist Response to Searle
+            - The Dreyfus' Phenomenological Critique
+            - Weizenbaum's Moral Critique
+            - Four Perspective on Morality
+            - The Turing Cathedral, Apocalyptic AI and the Pause Letter             
+            """)
 
 
 # - 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, VBA
