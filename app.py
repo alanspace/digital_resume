@@ -164,14 +164,12 @@ st.markdown("""
 st.markdown("### 🌟 Summer Schools & Hands-on Experience")
 
 st.markdown("""
- 
 - **VCQ & TURIS Summer School - September, 2024** 🎓  
   Topics: Quantum Information, General Relativity, Quantum Algorithms, Standard Model, Quantum Gravity 
 - **Minato Summer School - June, 2024** 🎓  
-  Topics: Cutting-edge Microelectronics, Nanochemistry, Advanced Fabrication Techniques for Quantum Devices: https://photos.app.goo.gl/32SjDaQ1TXAqWdUB6  
+  Topics: Cutting-edge Microelectronics, Nanochemistry, Advanced Fabrication Techniques for Quantum Devices
 - **7th Superconductivity Summer School - June, 2022** 🎓  
   Topics: Fundamentals of Superconductivity, Applications in Quantum Computing, Materials, Modelling, and Measurements 
- 
 """)
 
 # Education section header
@@ -179,16 +177,16 @@ st.subheader("🤖 Education & Expertise in Artificial Intelligence")
 st.markdown("### 📚 Courses Taken in AI & Society")
 st.markdown("""
 **📚 Artificial Intelligence in Society**
-            - The first Computational Theory of Mind and Brain
-            - The Mind as Symbol System
-            - The Turing Test
-            - John Searle and The Chinese Room
-            - The Churchland's Connectionist Response to Searle
-            - The Dreyfus' Phenomenological Critique
-            - Weizenbaum's Moral Critique
-            - Four Perspective on Morality
-            - The Turing Cathedral, Apocalyptic AI and the Pause Letter             
-            """)
+- The first Computational Theory of Mind and Brain
+- The Mind as Symbol System
+- The Turing Test
+- John Searle and The Chinese Room
+- The Churchland's Connectionist Response to Searle
+- The Dreyfus' Phenomenological Critique
+- Weizenbaum's Moral Critique
+- Four Perspective on Morality
+- The Turing Cathedral, Apocalyptic AI and the Pause Letter
+""")
 
 
 # - 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, VBA
