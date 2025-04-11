@@ -8,6 +8,7 @@ current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "Shek_Lun_leung,_Alan_Resume.pdf"
 profile_pic_path = current_dir / "assets" / "Profile_Canva_BG.png"
+master_project_file = current_dir / "assets" / "Machine_learning_for_optimal_parameter_prediction_in_quantum_key_distribution_updated.pdf"
 
 # --- GENERAL SETTINGS ---
 PAGE_TITLE = "Digital CV | Shek Lun Leung Alan"
@@ -29,7 +30,8 @@ SOCIAL_MEDIA = {
 
 PROJECTS = {
     "🏆 Master Thesis - Communication and Error Correction via Polarisation of Single Photons and Time Ordering": "https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1796647&dswid=-1650",
-    "🏆 Master Project - Machine Learning for Quantum Key Distribution Network Optimization": "https://drive.google.com/file/d/1S9d1gFsjn99yFDipn919nWORZP0PFdNF/view?usp=sharing",
+    "🏆 Master Project - Machine Learning for Quantum Key Distribution Network Optimization": "https://github.com/alanspace/Resume/raw/main/assets/Machine_learning_for_optimal_parameter_prediction_in_quantum_key_distribution_updated.pdf"
+    # "https://drive.google.com/file/d/1S9d1gFsjn99yFDipn919nWORZP0PFdNF/view?usp=sharing",
     
     # "🏆 Desktop Application - Excel2CSV converter with user settings & menubar": "https://youtu.be/LzCfNanQ_9c",
     # "🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel": "https://pythonandvba.com/mytoolbelt/",
