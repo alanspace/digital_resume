@@ -30,7 +30,7 @@ SOCIAL_MEDIA = {
 
 PROJECTS = {
     "🏆 Master Thesis - Communication and Error Correction via Polarisation of Single Photons and Time Ordering": "https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1796647&dswid=-1650",
-    "🏆 Master Project - Machine Learning for Quantum Key Distribution Network Optimization": "https://github.com/alanspace/Resume/raw/main/assets/Machine_learning_for_optimal_parameter_prediction_in_quantum_key_distribution_updated.pdf"
+    "🏆 Master Project - Machine Learning for Quantum Key Distribution Network Optimization": "https://github.com/alanspace/digital_resume/blob/master/assets/Machine_learning_for_optimal_parameter_prediction_in_quantum_key_distribution_updated.pdf"
     # "https://drive.google.com/file/d/1S9d1gFsjn99yFDipn919nWORZP0PFdNF/view?usp=sharing",
     
     # "🏆 Desktop Application - Excel2CSV converter with user settings & menubar": "https://youtu.be/LzCfNanQ_9c",
@@ -84,9 +84,15 @@ st.write("""
 """
 )
 
+# --- Projects & Accomplishments ---
+st.write('\n')
+st.subheader("Projects & Accomplishments")
+st.write("---")
+for project, link in PROJECTS.items():
+    st.write(f"[{project}]({link})")
 
 st.write('\n')
-st.subheader("Experience & Qulifications")
+st.subheader("Experience & Qualifications")
 st.write(
     """
 - ✔️ IBM Qiskit Certified Developer
@@ -229,11 +235,3 @@ st.markdown("""
 # - ► Collaborated with analyst team to oversee end-to-end process surrounding customers' return data
 # """
 # )
-
-
-# --- Projects & Accomplishments ---
-st.write('\n')
-st.subheader("Projects & Accomplishments")
-st.write("---")
-for project, link in PROJECTS.items():
-    st.write(f"[{project}]({link})")
