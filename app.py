@@ -30,9 +30,8 @@ SOCIAL_MEDIA = {
 
 PROJECTS = {
     "🏆 Master Thesis - Communication and Error Correction via Polarisation of Single Photons and Time Ordering": "https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1796647&dswid=-1650",
-    "🏆 Master Project - Machine Learning for Quantum Key Distribution Network Optimization": "https://github.com/alanspace/digital_resume/blob/master/assets/Machine_learning_for_optimal_parameter_prediction_in_quantum_key_distribution_updated.pdf"
-    # "https://drive.google.com/file/d/1S9d1gFsjn99yFDipn919nWORZP0PFdNF/view?usp=sharing",
-    
+    "🏆 Master Project - Machine Learning for Quantum Key Distribution Network Optimization": "https://github.com/alanspace/digital_resume/blob/master/assets/Machine_learning_for_optimal_parameter_prediction_in_quantum_key_distribution_updated.pdf",
+    " Autonomy in AI - Co-authored research on the simulation-reality gap in humanoid robots; proposed accountability frameworks for autonomous agents: ": "https://substack.com/inbox/post/182663178?r=73jdjw&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true&triedRedirect=true"
     # "🏆 Desktop Application - Excel2CSV converter with user settings & menubar": "https://youtu.be/LzCfNanQ_9c",
     # "🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel": "https://pythonandvba.com/mytoolbelt/",
 }
@@ -75,7 +74,21 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 # --- EXPERIENCE & QUALIFICATIONS ---
 
 st.write('\n')
-st.subheader("Recent Positions - CTO & Co-Founder at Metvibee")
+st.subheader("DreamToDone | Technical Director) (2025-present)")
+st.write("""
+-        Architecting an AI reasoning ecosystem for creative workflows; selected as a finalist for the KTH Innovation/SSE pitch competition.
+     """
+)
+
+st.write('\n')
+st.subheader("Grant Seeker AI | Technical Lead (Google x Kaggle Hackathon) (2025-present)")
+st.write("""
+-        Designed a multi-agent ecosystem using Google ADK & Gemini Flash
+-        Implemented sequential orchestration (Reasoning -> Search -> Extraction) and parallel web scraping for automated proposal generation
+     """
+)
+
+st.subheader("Metvibee AB | CTO & Co-Founder (2023-2024)")
 st.write("""
 - ✨ Prototype development of a smartphone AR app for participatory urban planning
 - ✨ Sharing insights on digital place-making by leveraging data and AI
@@ -177,6 +190,7 @@ st.subheader("🤖 Education & Expertise in Artificial Intelligence")
 st.markdown("### 📚 Courses Taken in AI & Society")
 st.markdown("""
 **📚 Artificial Intelligence in Society**
+- Synthesized course theories into an original 15-page framework on the      simulation-reality gap in humanoid LLMs.
 - The first Computational Theory of Mind and Brain
 - The Mind as Symbol System
 - The Turing Test
