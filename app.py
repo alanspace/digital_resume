@@ -206,12 +206,12 @@ st.write("---")
 
 # --- 5. ACADEMIC FOUNDATION: DEEP TECH & QUANTUM ---
 st.header("🎓 Specialized Academic Foundation")
-st.write("A comprehensive background in Quantum Engineering, Mathematical Physics, and AI Safety.")
+st.write("A comprehensive background in Quantum Engineering, Mathematical Physics, Artifical Intelligence and Computer Literacy.")
 
 # --- TABS FOR PRIMARY DOMAINS ---
 tab_quantum, tab_ai, tab_math, tab_sustain = st.tabs([
-    "⚛️ Quantum Technology", 
-    "🤖 AI Safety", 
+    "⚛️ Quantum Technology and Physical Sciences", 
+    "🤖 AI Safety and Deep Tech", 
     "📐 Math & Methodology", 
     "🌱 Sustainability Science"
 ])
@@ -222,109 +222,111 @@ with tab_quantum:
     # ROW 1: Theory and Algorithms
     q_col1, q_col2, q_col3 = st.columns(3)
     with q_col1:
-        st.markdown("""
-        **🧠 Quantum Information (SH2381)**
-        - Quantum Algorithms (Shor, Grover, etc.)
-        - Quantum Information Processing
-        - Quantum Cryptography & Security
-        - Quantum Error Correction (Surface Codes)
+        with st.expander("🧠 **Quantum Information (SH2381)**"):
+            st.markdown("""
+            - Quantum Algorithms (Shor, Grover, etc.)
+            - Quantum Information Processing
+            - Quantum Cryptography & Security
+            - Quantum Error Correction (Surface Codes)
         """)
     with q_col2:
-        st.markdown("""
-        **🔬 Quantum Photonics (SK2900)**
-        - Entanglement and Quantum Teleportation
-        - Single Photon Generation
-        - Quantum Repeater & Networking
-        - Quantum Key Distribution (QKD)
-        """)
+        with st.expander("🔬 **Quantum Photonics (SK2450)**"):
+            st.markdown("""
+            - Entanglement and Quantum Teleportation
+            - Single Photon Generation
+            - Quantum Repeater & Networking
+            - Quantum Key Distribution (QKD)
+            """)
     with q_col3:
-        st.markdown("""
-        **🧑‍🔬 Advanced Quantum Mechanics (SI2380)**
-        - Symmetry and Conservation Laws
-        - Angular Momentum and Spin
-        - Identical Particles
-        - Aharonov-Bohm Effect
-        - Main Approximation Methods
-        """)
+        with st.expander("🧑‍🔬 **Advanced Quantum Mechanics(SI2380)**"):
+            st.markdown("""
+            - Symmetry and Conservation Laws
+            - Angular Momentum and Spin
+            - Identical Particles
+            - Aharonov-Bohm Effect
+            - Main Approximation Methods
+            """)
 
     # ROW 2: Hardware and Systems
     q_col4, q_col5, q_col6 = st.columns(3)
     with q_col4:
-        st.markdown("""
-        **🔧 Quantum Technology (SK2903)**
-        - SNSPD (Superconducting Nanowire)
-        - SQUID (Interference Devices)
-        - Nanowire & Quantum Dots
-        - Quantum Erasure
-        """)
+        with st.expander("🔧**Quantum Technology(SK2903)**"):
+            st.markdown("""
+            - SNSPD (Superconducting Nanowire)
+            - SQUID (Interference Devices)
+            - Nanowire & Quantum Dots
+            - Quantum Erasure
+            """)
     with q_col5:
-        st.markdown("""
-        **❄️ Superconductivity & other Quantum Fluids (SK2905)**
-        - Superconductivity Theory & Apps
-        - BEC (Bose-Einstein Condensates)
-        - Superfluids
-        - Topological Quantum Computing
-        """)
+        with st.expander("❄️ **Superconductivity & other Quantum Fluids (SK2905)**"):
+            st.markdown("""
+            - Superconductivity Theory & Apps
+            - BEC (Bose-Einstein Condensates)
+            - Superfluids
+            - Topological Quantum Computing
+            """)
     with q_col6:
-        st.markdown("""
-        **🧩 Quantum Circuits (SK2906)**
-        - Transport Theory (Mesoscopic Systems)
-        - Lumped-Element Model for Circuit QED
-        - Quantum-limited Measurement
-        - Noise Analysis
-        """)
+        with st.expander("🧩 **Quantum Circuits (SK2906)**"):
+            st.markdown("""
+            - Transport Theory (Mesoscopic Systems)
+            - Lumped-Element Model for Circuit QED
+            - Quantum-limited Measurement
+            - Noise Analysis
+            """)
 
     # ROW 3: Communication and Materials
     q_col7, q_col8, q_col9 = st.columns(3)
     with q_col7:
-        st.markdown("""
-        **🌐 Fiber-Optical Communication (SK2811)**
-        - Light Sources (Lasers, LEDs)
-        - Optical Fibers & Waveguides
-        - Photodetectors (APDs, SNSPDs)
-        - Digital Fiber Optic Links for Long-Distance Communication  
-        """)
+        with st.expander("🌐 **Fiber-Optical Communication (SK2811)**"):
+            st.markdown("""
+            - Light Sources (Lasers, LEDs)
+            - Optical Fibers & Waveguides
+            - Photodetectors (APDs, SNSPDs)
+            - Digital Fiber Optic Links for Long-Distance Communication  
+            """)
     with q_col8:
-        st.markdown("""
-        **🧪 Quantum Materials (SK2904)**
-        - Advanced Characterization Techniques (STM, AFM, XPS)
-        - Topological Insulators
-        - Superconductors
-        - Quantum Dots
-        """)
+        with st.expander("🧪 **Quantum Materials (SK2904)**"):
+            st.markdown("""
+            - Advanced Characterization Techniques (STM, AFM, XPS)
+            - Topological Insulators
+            - Superconductors
+            - Quantum Dots
+            """)
     with q_col9:
-        st.markdown("""
-        **🔎 Methodology of Science (AK2030)**
-        - Hypothesis Testing & Statistical Reasoning
-        - Models, Definitions & Experiments
-        - Research Ethics & Risk Assessment
-        """)
+        with st.expander("🔎 **Methodology of Science (AK2030)**"):
+            st.markdown("""
+            - Hypothesis Testing & Statistical Reasoning
+            - Models, Definitions & Experiments
+            - Research Ethics & Risk Assessment
+            """)
 
     # ROW 4: Communication and Materials
     q_col10, q_col11, q_col12 = st.columns(3)
     with q_col10:
-        st.markdown("""
-        **🌐 research Methodology (SH2007)**
-        - Light Sources (Lasers, LEDs)
-        - Optical Fibers & Waveguides
-        - Photodetectors (APDs, SNSPDs)
-        - Digital Fiber Optic Links for Long-Distance Communication  
-        """)
+        with st.expander("🧪 **Research Methodology (SH2007)**"):
+            st.markdown("""
+            - **Scientific Assessment:** Critical analysis of peer-review systems and technical reports.
+            - **Quantitative Estimation:** Applying Fermi estimates and dimensional analysis to physics problems.
+            - **Communication:** Summarizing complex Nobel-prize winning work (e.g., Complex Systems, Climate Modeling).
+            - **Literature Review:** Comparative study of subatomic scattering research (Rutherford to modern era).
+            """)
     with q_col11:
-        st.markdown("""
-        **🧪 Optics and Laser Physics (FK7046)**
-        - Advanced Characterization Techniques (STM, AFM, XPS)
-        - Topological Insulators
-        - Superconductors
-        - Quantum Dots
-        """)
+        with st.expander("🔦 **Optics and Laser Physics (FK7046)**"):
+            st.markdown("""
+            - **Wave & Ray Optics:** Fermat’s Principle, Matrix Optics, Maxwell’s Equations.
+            - **Beam Dynamics:** Gaussian Beams, Polarization, Interference, and Diffraction.
+            - **Laser Physics:** Principles, characteristics, and feedback-stabilized diode lasers.
+            - **Advanced Research:** Oral presentation on **Photonic Quantum Computation**.
+            - **Experimental Labs:** Diode lasers with optical feedback; Gaussian beam & optical cavity analysis.
+            """)
     with q_col12:
-        st.markdown("""
-        **🔎 Atomic and Molecular Physics (FK5023)**
-        - Hypothesis Testing & Statistical Reasoning
-        - Models, Definitions & Experiments
-        - Research Ethics & Risk Assessment
-        """)
+        with st.expander("⚛️ **Atomic and Molecular Physics (FK5023)**"):
+            st.markdown("""
+            - **Atomic Structure:** Fine/Hyperfine structures, Zeeman effect, alkali atoms.
+            - **Perturbation Theory:** Spin-orbit interaction and relativistic effects.
+            - **Molecular Dynamics:** Born-Oppenheimer approximation, ro-vibrational spectra (CO spectrum analysis).
+            - **Experimental:** Laser-Induced Fluorescence (LIF) and Franck-Hertz experiment.
+            """)
 
     st.markdown("### 🌟 Advanced Technical Training & Summer Schools")
     ss_col1, ss_col2, ss_col3 = st.columns(3)
@@ -350,52 +352,53 @@ with tab_quantum:
 with tab_ai:
     ai_col1, ai_col2 = st.columns(2)
     with ai_col1:
-        st.markdown("""
-        **🤖 Artificial Intelligence in Society**
-        - The first Computational Theory of Mind and Brain
-        - The Mind as Symbol System
-        - The Turing Test
-        - John Searle and The Chinese Room
-        - The Churchlands' Connectionist Response to Searle
-        - The Dreyfus' Phenomenological Critique
-        - Weizenbaum's Moral Critique
-        - Four Perspective on Morality
-        - The Turing Cathedral, Apocalyptic AI and the Pause Letter
-        - **Original Research:** 15-page report on the Simulation-Reality gap in Humanoid robots.
-        """)
+        with st.expander("🤖 **Artificial Intelligence in Society (DM2585)**"):
+            st.markdown("""
+            - The first Computational Theory of Mind and Brain
+            - The Mind as Symbol System
+            - The Turing Test
+            - John Searle and The Chinese Room
+            - The Churchlands' Connectionist Response to Searle
+            - The Dreyfus' Phenomenological Critique
+            - Weizenbaum's Moral Critique
+            - Four Perspective on Morality
+            - The Turing Cathedral, Apocalyptic AI and the Pause Letter
+            - **Original Research:** 15-page report on the Simulation-Reality gap in Humanoid robots.
+            """)
     with ai_col2:    
-        st.markdown("""
-        **🔎 Methodology of Science (AK2030)**
-        - Hypothesis Testing & Statistical Reasoning
-        - Models, Definitions & Experiments
-        - Research Ethics & Risk Assessment
-        """)
+        with st.expander("💻 **Programming Techniques II (DA4007)**"):
+            st.markdown("""
+            - **C++ Development:** OOP (Classes/Inheritance), Constructor/Destructor logic, Smart Pointers.
+            - **Unix/Linux Environment:** Shell scripting, Terminal piping & redirection, LSW.
+            - **Software Engineering:** Makefiles, Git version control, Debugging & Error handling.
+            """)
 
 with tab_math:
     ma_col1, ma_col2 = st.columns(2)
     with ma_col1:
-        st.markdown("""
-            **Mathematical Methods in Physics (Advanced Graduate Level) (FK7048)**
+        with st.expander("📐 **Mathematical Methods in Physics (Advanced Graduate Level) (FK7048)**"):
+            st.markdown("""
             - **Differential Equations:** Method of Frobenius, Nonlinear ODEs, Sturm-Liouville Theorem.
             - **Complex Analysis:** Contour Integrals, Cauchy’s Theorem, Residue Theory, singularities.
             - **Special Functions:** Bessel, Neumann, Legendre, Gamma/Beta functions, Orthogonal Polynomials.
             - **Integral Transforms:** Fourier and Laplace Transforms, Convolution Theory, Green's Functions.
     """)
     with ma_col2:
-        st.markdown("""
-        **💻 Programming Techniques II (DA4007)**
-        - **C++ Development:** OOP (Classes/Inheritance), Constructor/Destructor logic, Smart Pointers.
-        - **Unix/Linux Environment:** Shell scripting, Terminal piping & redirection, LSW.
-        - **Software Engineering:** Makefiles, Git version control, Debugging & Error handling.
-        """)
+        with st.expander("🐍 **Numerical Analysis II (DA5001)**"):
+            st.markdown("""
+            - **Finite Differences (FDM):** Stability (von Neumann), Convergence, Consistency, Stencils.
+            - **Finite Element Method (FEM):** 1D/2D Elliptical & Hyperbolic problems, Unstructured Meshes.
+            - **Analysis:** a priori/a posteriori error estimation, Lax-Milgram Lemma.
+            - **Modeling:** Python implementation of non-linear and time-dependent PDE solvers.
+            """)
 
 with tab_sustain:
-    st.markdown("""
-    **🌱 Introduction to Sustainability Science (BL7041)**
-    - Systems Thinking & Anthropocene Dynamics
-    - Changemaking Options and Objectives
-    - Reconnecting human systems with planetary boundaries
-    """)
+    with st.expander("🌱 **Introduction to Sustainability Science (BL7041)**"):
+        st.markdown("""
+        - Systems Thinking & Anthropocene Dynamics
+        - Changemaking Options and Objectives
+        - Reconnecting human systems with planetary boundaries
+        """)
 
 # PROJECTS = {
 #     "🛡️ Autonomy in AI - Exploring the simulation-reality gap in humanoid robots and human accountability.": "https://tinyurl.com/576zs4vc",
