@@ -41,7 +41,7 @@ profile_pic = Image.open(profile_pic_path)
 # --- 1. HEADER SECTION ---
 col1, col2 = st.columns([1, 2], gap="medium")
 with col1:
-    st.image(profile_pic, width=450)
+    st.image(profile_pic, width=300)
 
 with col2:
     st.title("Shek Leung Lun, Alan")
@@ -49,28 +49,21 @@ with col2:
     st.write("📍 Stockholm, Sweden")
     st.write("📧 sheklunleung.qai@proton.me")
     
-    # --- 2. THE RESUME DOWNLOAD SECTION (3 COLUMNS) ---
-    st.write("### 📄 Download my Resume")
-    st.info("Choose the version most relevant to your interests:")
-    dl_col1, dl_col2, dl_col3 = st.columns(3)
-    with dl_col1:
-        st.download_button("🤖 AI Version", data=ai_pdf, file_name="Alan_Leung_AI.pdf", use_container_width=True)
-    with dl_col2:
-        st.download_button("⚛️ Quantum Tech Version", data=q_pdf, file_name="Alan_Leung_Quantum.pdf", use_container_width=True)
-    with dl_col3:
-        st.download_button("🚀 Founder/CTO Version", data=cto_pdf, file_name="Alan_Leung_CTO.pdf", use_container_width=True)
+    # --- SOCIAL LINKS ---
+    st.write('\n')
+    SOCIAL_MEDIA = {
+        "LinkedIn": "https://www.linkedin.com/in/shek-lun-leung-alan/",
+        "GitHub": "https://github.com/alanspace",
+        "Portfolio": "https://alanspace.github.io/Alan_Portfolio_advanced/",
+        "Substack": "https://simulationgap.substack.com"
+    }
+    
+    # Display social links in a row
+    cols = st.columns(len(SOCIAL_MEDIA))
+    for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+        cols[index].write(f"[{platform}]({link})")
 
-# --- SOCIAL LINKS ---
-st.write('\n')
-SOCIAL_MEDIA = {
-    "LinkedIn": "https://www.linkedin.com/in/shek-lun-leung-alan/",
-    "GitHub": "https://github.com/alanspace",
-    "Portfolio": "https://alanspace.github.io/Alan_Portfolio_advanced/",
-    "Substack": "https://simulationgap.substack.com"
-}
-cols = st.columns(len(SOCIAL_MEDIA))
-for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    cols[index].write(f"[{platform}]({link})")
+
 
 st.write("---")
 # # --- GENERAL SETTINGS ---
@@ -101,18 +94,16 @@ with lead_col1:
     st.write("- ✨ Finalist for the KTH Innovation/SSE pitch competition.")
 
 with lead_col2:
-    st.subheader("Grant Seeker AI | Technical Lead in Kaggle Hackathon ")
+    st.subheader("[Grant Seeker AI | Technical Lead in Kaggle Hackathon](https://tinyurl.com/576zs4vc) ")
     st.write("*Oct 2025 – Present*")
     st.write("- ✨ Designed a multi-agent ecosystem using Google ADK & Gemini Flash.")
     st.write("- ✨ Implemented sequential orchestration for automated proposal generation.")
-
 
 with lead_col3:
     st.subheader("Metvibee AB | CTO & Co-Founder")
     st.write("*2023 – 2024*")
     st.write("- ✨ Led technology strategy and AR prototype development for urban planning.")
     st.write("- ✨ Managed full-stack R&D and stakeholder technical demonstrations.")
-
 
 # st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
@@ -175,14 +166,14 @@ st.write("---")
 st.header("🔬 Featured Research & Technical Projects")
 st.write("Bridging the gap between theoretical physics and empirical AI implementation.")
 
-proj_col1, proj_col2, proj_col3 = st.columns(3)
+proj_col1, proj_col2 = st.columns(2)
 
 with proj_col1:
-    st.markdown("#### 🛡️ [Autonomy in AI: Exploring Subjectivity](https://tinyurl.com/576zs4vc)")
+    st.markdown("#### 🛡️ [Autonomy in AI: Exploring Subjectivity](https://substack.com/inbox/post/182663178?r=73jdjw&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true&triedRedirect=true)")
     st.write("""
     - Investigated the **simulation-reality gap** in LLM-powered humanoid robots.
     - Proposed accountability frameworks for autonomous agents.
-    - Originally produced for KTH AI in Society course (2025).
+    - Published on **Substack**; Originally produced for KTH AI in Society course (2025).
     """)
 
 with proj_col2:
@@ -190,17 +181,33 @@ with proj_col2:
     st.write("""
     - Designed a hybrid **JAX/PyTorch** pipeline for real-time parameter prediction.
     - Achieved a **~270x performance speedup** across 6,000 scenarios.
-    - Master's Project at KTH (2024–2025).
+    - Master research project in research group NQCIS at KTH (2024–2025).
     """)
+proj_col3, proj_col4 = st.columns(2)
 
 with proj_col3:
     st.markdown("#### 🔬 [Master Thesis: Secure Communication](https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1796647&dswid=-1650)")
     st.write("""
     - Analyzed **Beyond Pulse Position Modulation (BPPM)** for energy-efficient security.
     - Proved superior information density via large-scale Python simulations.
-    - Published at Ericsson AB / KTH (2023).
+    - Published at **Ericsson AB / KTH** (2023).
     """)
+# with proj_col4:
+#     st.markdown("#### 💡 [Photonic Ising Machine (Self-Directed)](https://github.com/alanspace/Photonic_Computing)")
+#     st.write("""
+#     - Architected an optical Ising machine using **Spatial Light Modulation (SLM)**.
+#     - Implemented phase-coupling algorithms to solve **NP-hard optimization** problems.
+#     - Investigated hardware-accelerated computation at the physical limit.
+#     """)
 
+with proj_col4:
+    st.markdown("#### 🌀 [Nonlinear Dynamics & Chaos (IPT Research Project SK2003)](https://github.com/alanspace/nonlinear-dynamics-chaos.git)")
+    st.write("""
+    - **Modeling:** First-principles derivation of second-order nonlinear differential equations for R-L-D circuits.
+    - **Analysis:** High-resolution bifurcation mapping and power spectra analysis of period-doubling cascades.
+    - **Precision:** Automated computer-controlled measurement of the Feigenbaum constant ($δ = 4.67 \pm 0.08$).
+    - **Recognition:** Developed as part of the winning national selection for the **International Physicists' Tournament**.
+    """)
 
 st.write("---")
 
@@ -272,6 +279,7 @@ with tab_quantum:
             - Lumped-Element Model for Circuit QED
             - Quantum-limited Measurement
             - Noise Analysis
+            - **Key Project:** *Cat States in Circuit QED* — Investigated the generation and decoherence of non-classical states in superconducting resonators.
             """)
 
     # ROW 3: Communication and Materials
@@ -318,6 +326,7 @@ with tab_quantum:
             - **Laser Physics:** Principles, characteristics, and feedback-stabilized diode lasers.
             - **Advanced Research:** Oral presentation on **Photonic Quantum Computation**.
             - **Experimental Labs:** Diode lasers with optical feedback; Gaussian beam & optical cavity analysis.
+            - **Oral Presentation:** Photonic Quantum Computation and its scalability.
             """)
     with q_col12:
         with st.expander("⚛️ **Atomic and Molecular Physics (FK5023)**"):
@@ -327,6 +336,41 @@ with tab_quantum:
             - **Molecular Dynamics:** Born-Oppenheimer approximation, ro-vibrational spectra (CO spectrum analysis).
             - **Experimental:** Laser-Induced Fluorescence (LIF) and Franck-Hertz experiment.
             """)
+     # ROW 5: Communication and Materials
+    q_col13, _, _ = st.columns(3)
+    # with q_col13:
+    #     with st.expander("🌀 **[Nonlinear Dynamics & Chaos (IPT Research Project SK2003)](https://github.com/alanspace/nonlinear-dynamics-chaos.git)**"):
+    #         st.markdown("""
+    #         - **Modeling:** First-principles derivation of second-order nonlinear differential equations for R-L-D circuits.
+    #         - **Analysis:** High-resolution bifurcation mapping and power spectra analysis of period-doubling cascades.
+    #         - **Precision:** Automated computer-controlled measurement of the Feigenbaum constant ($δ = 4.67 \pm 0.08$).
+    #         - **Recognition:** Developed as part of the winning national selection for the **International Physicists' Tournament**.
+    #         """)
+    with q_col13:
+        with st.expander(" 💡 **Photonic Ising Machine (Self-Directed)**"):
+            st.markdown("[**View on GitHub**](https://github.com/alanspace/Photonic_Computing)")
+            st.markdown("""
+            - Architected an optical Ising machine using **Spatial Light Modulation (SLM)**.
+            - Implemented phase-coupling algorithms to solve **NP-hard optimization** problems.
+            - Investigated hardware-accelerated computation at the physical limit.
+            """)
+    # with q_col14:
+    #     with st.expander("🔦 **Optics and Laser Physics (FK7046)**"):
+    #         st.markdown("""
+    #         - **Wave & Ray Optics:** Fermat’s Principle, Matrix Optics, Maxwell’s Equations.
+    #         - **Beam Dynamics:** Gaussian Beams, Polarization, Interference, and Diffraction.
+    #         - **Laser Physics:** Principles, characteristics, and feedback-stabilized diode lasers.
+    #         - **Advanced Research:** Oral presentation on **Photonic Quantum Computation**.
+    #         - **Experimental Labs:** Diode lasers with optical feedback; Gaussian beam & optical cavity analysis.
+    #         """)
+    # with q_col15:
+    #     with st.expander("⚛️ **Atomic and Molecular Physics (FK5023)**"):
+    #         st.markdown("""
+    #         - **Atomic Structure:** Fine/Hyperfine structures, Zeeman effect, alkali atoms.
+    #         - **Perturbation Theory:** Spin-orbit interaction and relativistic effects.
+    #         - **Molecular Dynamics:** Born-Oppenheimer approximation, ro-vibrational spectra (CO spectrum analysis).
+    #         - **Experimental:** Laser-Induced Fluorescence (LIF) and Franck-Hertz experiment.
+    #         """)
 
     st.markdown("### 🌟 Advanced Technical Training & Summer Schools")
     ss_col1, ss_col2, ss_col3 = st.columns(3)
@@ -390,6 +434,11 @@ with tab_math:
             - **Finite Element Method (FEM):** 1D/2D Elliptical & Hyperbolic problems, Unstructured Meshes.
             - **Analysis:** a priori/a posteriori error estimation, Lax-Milgram Lemma.
             - **Modeling:** Python implementation of non-linear and time-dependent PDE solvers.
+            - **Benchmark Project:** *Non-Linear Simulation of the Arolla Glacier (NASA FO Model)*
+                - Implemented a 2D cross-section model of glacial ice flow using **FEniCSx**.
+                - Resolved non-linear fluid dynamics (non-Newtonian viscosity) using **Picard/Fixed-point iterations**.
+                - **Theoretical Rigor:** Proved Galerkin Orthogonality and Best Approximation results; conducted a priori error estimation.
+                - **Numerical Stability:** Investigated the convergence impact of the regularization parameter $\epsilon$, identifying critical thresholds for solver stability.
             """)
 
 with tab_sustain:
