@@ -52,10 +52,10 @@ with col2:
     # --- SOCIAL LINKS ---
     st.write('\n')
     SOCIAL_MEDIA = {
-        "LinkedIn": "https://www.linkedin.com/in/shek-lun-leung-alan/",
-        "GitHub": "https://github.com/alanspace",
-        "Portfolio": "https://alanspace.github.io/Alan_Portfolio_advanced/",
-        "Substack": "https://simulationgap.substack.com"
+        "👔 LinkedIn": "https://www.linkedin.com/in/shek-lun-leung-alan/",
+        "💻 GitHub": "https://github.com/alanspace",
+        "🌐 Portfolio": "https://alanspace.github.io/Alan_Portfolio_advanced/",
+        "✍️ Substack": "https://simulationgap.substack.com"
     }
     
     # Display social links in a row
@@ -85,32 +85,51 @@ st.write("---")
 
 # --- 3. RECENT TECHNICAL LEADERSHIP ---
 st.header("🚀 Technical Leadership")
-lead_col1, lead_col2, lead_col3 = st.columns(3)
-
-with lead_col1:
-    st.subheader("DreamToDone | Technical Director")
-    st.write("*Oct 2025 – Present*")
-    st.write("- ✨ Architecting an AI reasoning ecosystem for creative workflows.")
-    st.write("- ✨ Finalist for the KTH Innovation/SSE pitch competition.")
-
-with lead_col2:
-    st.subheader("[Grant Seeker AI | Technical Lead in Kaggle Hackathon](https://tinyurl.com/576zs4vc) ")
-    st.write("*Oct 2025 – Present*")
-    st.write("- ✨ Designed a multi-agent ecosystem using Google ADK & Gemini Flash.")
-    st.write("- ✨ Implemented sequential orchestration for automated proposal generation.")
-
-with lead_col3:
-    st.subheader("Metvibee AB | CTO & Co-Founder")
-    st.write("*2023 – 2024*")
-    st.write("- ✨ Led technology strategy and AR prototype development for urban planning.")
-    st.write("- ✨ Managed full-stack R&D and stakeholder technical demonstrations.")
+st.markdown("""
+<div class="leadership-grid">
+    <div class="leadership-card">
+        <div class="card-role">Technical Director</div>
+        <div class="card-company">DreamToDone</div>
+        <div class="card-date">Oct 2025 – Present</div>
+        <div class="card-bullets">
+            <ul>
+                <li>Architecting an AI reasoning ecosystem for creative workflows.</li>
+                <li>Finalist for the KTH Innovation/SSE pitch competition.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="leadership-card">
+        <div class="card-role"><a href="https://tinyurl.com/576zs4vc" target="_blank">Technical Lead (Hackathon)</a></div>
+        <div class="card-company">Grant Seeker AI</div>
+        <div class="card-date">Oct 2025 – Present</div>
+        <div class="card-bullets">
+            <ul>
+                <li>Designed a multi-agent ecosystem using Google ADK & Gemini Flash.</li>
+                <li>Implemented sequential orchestration for automated proposal generation.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="leadership-card">
+        <div class="card-role">CTO & Co-Founder</div>
+        <div class="card-company">Metvibee AB</div>
+        <div class="card-date">2023 – 2024</div>
+        <div class="card-bullets">
+            <ul>
+                <li>Led technology strategy and AR prototype development for urban planning.</li>
+                <li>Managed full-stack R&D and stakeholder technical demonstrations.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
 # st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 
 # # --- LOAD CSS, PDF & PROFIL PIC ---
-# with open(css_file) as f:
-#     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+# --- LOAD CSS, PDF & PROFIL PIC ---
+with open(css_file) as f:
+    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 # with open(resume_file, "rb") as pdf_file:
 #     PDFbyte = pdf_file.read()
 # profile_pic = Image.open(profile_pic_path)
@@ -166,48 +185,57 @@ st.write("---")
 st.header("🔬 Featured Research & Technical Projects")
 st.write("Bridging the gap between theoretical physics and empirical AI implementation.")
 
-proj_col1, proj_col2 = st.columns(2)
+st.markdown("""
+<div class="project-grid">
+<!-- Project 1 -->
+<div class="project-card">
+<div class="project-title">🛡️ <a href="https://substack.com/inbox/post/182663178?r=73jdjw&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true&triedRedirect=true" target="_blank">Autonomy in AI: Subjectivity</a></div>
+<div class="project-desc">
+<ul>
+<li>Investigated the <strong>simulation-reality gap</strong> in LLM-powered humanoid robots.</li>
+<li>Proposed accountability frameworks for autonomous agents.</li>
+<li>Published on <strong>Substack</strong>; Originally produced for KTH AI in Society course (2025).</li>
+</ul>
+</div>
+</div>
 
-with proj_col1:
-    st.markdown("#### 🛡️ [Autonomy in AI: Exploring Subjectivity](https://substack.com/inbox/post/182663178?r=73jdjw&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true&triedRedirect=true)")
-    st.write("""
-    - Investigated the **simulation-reality gap** in LLM-powered humanoid robots.
-    - Proposed accountability frameworks for autonomous agents.
-    - Published on **Substack**; Originally produced for KTH AI in Society course (2025).
-    """)
+<!-- Project 2 -->
+<div class="project-card">
+<div class="project-title">📈 <a href="https://github.com/alanspace/QKD_KeyRate_Parameter_Optimization" target="_blank">ML for QKD Optimization</a></div>
+<div class="project-desc">
+<ul>
+<li>Designed a hybrid <strong>JAX/PyTorch</strong> pipeline for real-time parameter prediction.</li>
+<li>Achieved a <strong>~270x performance speedup</strong> across 6,000 scenarios.</li>
+<li>Master research project in research group NQCIS at KTH (2024–2025).</li>
+</ul>
+</div>
+</div>
 
-with proj_col2:
-    st.markdown("#### 📈 [ML for QKD Network Optimization](https://github.com/alanspace/QKD_KeyRate_Parameter_Optimization)")
-    st.write("""
-    - Designed a hybrid **JAX/PyTorch** pipeline for real-time parameter prediction.
-    - Achieved a **~270x performance speedup** across 6,000 scenarios.
-    - Master research project in research group NQCIS at KTH (2024–2025).
-    """)
-proj_col3, proj_col4 = st.columns(2)
+<!-- Project 3 -->
+<div class="project-card">
+<div class="project-title">🔬 <a href="https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1796647&dswid=-1650" target="_blank">Master Thesis: Secure Comm</a></div>
+<div class="project-desc">
+<ul>
+<li>Analyzed <strong>Beyond Pulse Position Modulation (BPPM)</strong> for energy-efficient security.</li>
+<li>Proved superior information density via large-scale Python simulations.</li>
+<li>Published at <strong>Ericsson AB / KTH</strong> (2023).</li>
+</ul>
+</div>
+</div>
 
-with proj_col3:
-    st.markdown("#### 🔬 [Master Thesis: Secure Communication](https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1796647&dswid=-1650)")
-    st.write("""
-    - Analyzed **Beyond Pulse Position Modulation (BPPM)** for energy-efficient security.
-    - Proved superior information density via large-scale Python simulations.
-    - Published at **Ericsson AB / KTH** (2023).
-    """)
-# with proj_col4:
-#     st.markdown("#### 💡 [Photonic Ising Machine (Self-Directed)](https://github.com/alanspace/Photonic_Computing)")
-#     st.write("""
-#     - Architected an optical Ising machine using **Spatial Light Modulation (SLM)**.
-#     - Implemented phase-coupling algorithms to solve **NP-hard optimization** problems.
-#     - Investigated hardware-accelerated computation at the physical limit.
-#     """)
-
-with proj_col4:
-    st.markdown("#### 🌀 [Nonlinear Dynamics & Chaos (IPT Research Project SK2003)](https://github.com/alanspace/nonlinear-dynamics-chaos.git)")
-    st.write("""
-    - **Modeling:** First-principles derivation of second-order nonlinear differential equations for R-L-D circuits.
-    - **Analysis:** High-resolution bifurcation mapping and power spectra analysis of period-doubling cascades.
-    - **Precision:** Automated computer-controlled measurement of the Feigenbaum constant ($δ = 4.67 \pm 0.08$).
-    - **Recognition:** Developed as part of the winning national selection for the **International Physicists' Tournament**.
-    """)
+<!-- Project 4 -->
+<div class="project-card">
+<div class="project-title">🌀 <a href="https://github.com/alanspace/nonlinear-dynamics-chaos.git" target="_blank">Nonlinear Dynamics & Chaos</a></div>
+<div class="project-desc">
+<ul>
+<li><strong>Modeling:</strong> First-principles derivation of second-order nonlinear differential equations.</li>
+<li><strong>Analysis:</strong> High-resolution bifurcation mapping and power spectra analysis.</li>
+<li><strong>Precision:</strong> Automated measurement of Feigenbaum constant ($δ = 4.67 \pm 0.08$).</li>
+</ul>
+</div>
+</div>
+</div>
+""", unsafe_allow_html=True)
 
 st.write("---")
 
@@ -497,22 +525,47 @@ with ach_col2:
     - **✍️ Content Creator:** QuantumGrad (Deep Tech Education)
     """)
 
-# - 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, VBA
-# - 📊 Data Visulization: PowerBi, MS Excel, Plotly
-# - 📚 Modeling: Logistic regression, linear regression, decition trees
-# - 🗄️ Databases: Postgres, MongoDB, MySQL
 
-# # --- SKILLS ---
-# st.write('\n')
-# st.subheader("Hard Skills")
-# st.write(
-#     """
-# # - 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, VBA
-# # - 📊 Data Visulization: PowerBi, MS Excel, Plotly
-# # - 📚 Modeling: Logistic regression, linear regression, decition trees
-# # - 🗄️ Databases: Postgres, MongoDB, MySQL
-# # """
-# # )
+
+# --- SKILLS ---
+st.write('\n')
+st.header("🛠 Tech Stack & Tools")
+st.markdown("""
+<div class="tech-section">
+    <div class="tech-category">Quantum & Physics</div>
+    <div>
+        <span class="tech-badge">Qiskit Certified</span>
+        <span class="tech-badge">Quantum Optics</span>
+        <span class="tech-badge">QKD Integration</span>
+        <span class="tech-badge">Error Correction (Surface Codes)</span>
+        <span class="tech-badge">FEniCSx (FEM)</span>
+    </div>
+</div>
+
+<div class="tech-section">
+    <div class="tech-category">AI & Machine Learning</div>
+    <div>
+        <span class="tech-badge">JAX / PyTorch (High-Perf)</span>
+        <span class="tech-badge">Multi-Agent Systems</span>
+        <span class="tech-badge">Google Gemini API</span>
+        <span class="tech-badge">LLM Orchestration</span>
+        <span class="tech-badge">AI Safety</span>
+    </div>
+</div>
+
+<div class="tech-section">
+    <div class="tech-category">Full Stack & Engineering</div>
+    <div>
+        <span class="tech-badge">Python (Expert)</span>
+        <span class="tech-badge">C++</span>
+        <span class="tech-badge">Linux/Unix</span>
+        <span class="tech-badge">Docker</span>
+        <span class="tech-badge">Git/CI/CD</span>
+        <span class="tech-badge">Postgres</span>
+        <span class="tech-badge">Streamlit</span>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
 
 # # --- WORK HISTORY ---
