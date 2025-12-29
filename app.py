@@ -41,7 +41,7 @@ profile_pic = Image.open(profile_pic_path)
 # --- 1. HEADER SECTION ---
 col1, col2 = st.columns([1, 2], gap="medium")
 with col1:
-    st.image(profile_pic, width=450)
+    st.image(profile_pic, width=300)
 
 with col2:
     st.title("Shek Leung Lun, Alan")
@@ -49,28 +49,21 @@ with col2:
     st.write("📍 Stockholm, Sweden")
     st.write("📧 sheklunleung.qai@proton.me")
     
-    # --- 2. THE RESUME DOWNLOAD SECTION (3 COLUMNS) ---
-    st.write("### 📄 Download my Resume")
-    st.info("Choose the version most relevant to your interests:")
-    dl_col1, dl_col2, dl_col3 = st.columns(3)
-    with dl_col1:
-        st.download_button("🤖 AI Version", data=ai_pdf, file_name="Alan_Leung_AI.pdf", use_container_width=True)
-    with dl_col2:
-        st.download_button("⚛️ Quantum Tech Version", data=q_pdf, file_name="Alan_Leung_Quantum.pdf", use_container_width=True)
-    with dl_col3:
-        st.download_button("🚀 Founder/CTO Version", data=cto_pdf, file_name="Alan_Leung_CTO.pdf", use_container_width=True)
+    # --- SOCIAL LINKS ---
+    st.write('\n')
+    SOCIAL_MEDIA = {
+        "LinkedIn": "https://www.linkedin.com/in/shek-lun-leung-alan/",
+        "GitHub": "https://github.com/alanspace",
+        "Portfolio": "https://alanspace.github.io/Alan_Portfolio_advanced/",
+        "Substack": "https://simulationgap.substack.com"
+    }
+    
+    # Display social links in a row
+    cols = st.columns(len(SOCIAL_MEDIA))
+    for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+        cols[index].write(f"[{platform}]({link})")
 
-# --- SOCIAL LINKS ---
-st.write('\n')
-SOCIAL_MEDIA = {
-    "LinkedIn": "https://www.linkedin.com/in/shek-lun-leung-alan/",
-    "GitHub": "https://github.com/alanspace",
-    "Portfolio": "https://alanspace.github.io/Alan_Portfolio_advanced/",
-    "Substack": "https://simulationgap.substack.com"
-}
-cols = st.columns(len(SOCIAL_MEDIA))
-for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    cols[index].write(f"[{platform}]({link})")
+
 
 st.write("---")
 # # --- GENERAL SETTINGS ---
