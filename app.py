@@ -54,8 +54,7 @@ with col2:
     SOCIAL_MEDIA = {
         "👔 LinkedIn": "https://www.linkedin.com/in/shek-lun-leung-alan/",
         "💻 GitHub": "https://github.com/alanspace",
-        "🌐 Portfolio": "https://alanspace.github.io/Alan_Portfolio_advanced/",
-        "✍️ Substack": "https://simulationgap.substack.com"
+        "🌐 Portfolio": "https://alanspace.github.io/Alan_Portfolio_advanced/"
     }
     
     # Display social links in a row
